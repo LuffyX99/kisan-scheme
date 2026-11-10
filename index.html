@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#143b2a">
+  <meta name="description" content="A friendly voice-first guide to farmer schemes in India.">
+  <title>Kisan Mitra — Your farm, your support</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<main class="app">
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Kisan Mitra home">
+      <span class="brand-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none"><path d="M24 40V17" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M24 27C12 27 8 20 8 11c10 0 16 4 16 16Z" fill="#b7d88b"/><path d="M24 22c0-10 6-15 16-15 0 10-5 17-16 17" fill="#e5b86c"/><path d="M13 40h22" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand-copy"><strong>Kisan Mitra</strong><small>Your farm. Your support.</small></span>
+    </a>
+    <label class="language"><span>Speak in</span><select id="language" aria-label="Choose language"><option value="auto">Auto detect</option><option value="hi">हिन्दी</option><option value="hinglish">Hinglish</option><option value="kn">ಕನ್ನಡ</option><option value="ta">தமிழ்</option><option value="te">తెలుగు</option><option value="mr">मराठी</option></select></label>
+  </header>
+
+  <section class="hero" aria-label="Welcome">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="eyebrow-dot"></span> A little help, right from your field</span>
+      <h1>Good things grow<br>with the <em>right support.</em></h1>
+      <p>Tell us about your farm. We’ll help you find schemes worth exploring.</p>
+      <div class="hero-trust"><span class="trust-icon">✦</span> Simple questions <span class="trust-divider"></span> Your language <span class="trust-divider"></span> Clear next steps</div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg class="field-art" viewBox="0 0 520 260" fill="none">
+        <circle class="sun" cx="386" cy="57" r="29" fill="#F2C56F"/>
+        <path class="cloud" d="M323 65c0-9 7-16 16-16 4-12 21-13 27-2 10-3 19 5 18 15h-61Z" fill="#FBF6E9" opacity=".85"/>
+        <path d="M0 147c83-40 154-34 232-4 81 31 175 32 288-12v129H0V147Z" fill="#547C4D"/>
+        <path d="M0 174c91-33 168-24 240 4 95 36 178 22 280-23v105H0V174Z" fill="#78965A"/>
+        <path d="M0 204c103-35 184-18 260 13 96 39 179 20 260-18v61H0v-56Z" fill="#B8C77B"/>
+        <path d="M0 234c113-32 189-12 273 18 92 33 164 20 247-7v15H0v-26Z" fill="#D5B66E"/>
+        <g class="crop-lines" stroke="#E7D99B" stroke-width="2" opacity=".78">
+          <path d="M53 194c41-20 83-30 128-32M28 209c55-24 107-37 159-39M19 224c67-29 126-43 187-44M306 211c46-8 100-25 151-49M300 228c58-9 122-30 180-57M286 244c75-10 142-37 203-67"/>
+        </g>
+        <g class="little-sprout" transform="translate(228 126)">
+          <path d="M0 28V0" stroke="#F7E8B1" stroke-width="3" stroke-linecap="round"/><path d="M0 13C-14 13-18 5-18-3-7-3 0 2 0 13Z" fill="#D2E19A"/><path d="M0 8C0-3 7-8 17-8 17 3 11 10 0 11" fill="#E7D793"/>
+        </g>
+        <g class="little-sprout" transform="translate(460 164) scale(.72)">
+          <path d="M0 28V0" stroke="#F7E8B1" stroke-width="3" stroke-linecap="round"/><path d="M0 13C-14 13-18 5-18-3-7-3 0 2 0 13Z" fill="#D2E19A"/><path d="M0 8C0-3 7-8 17-8 17 3 11 10 0 11" fill="#E7D793"/>
+        </g>
+      </svg>
+      <span class="art-note">Rooted in your community <span>↗</span></span>
+    </div>
+    <span class="hero-spark spark-one" aria-hidden="true">✳</span><span class="hero-spark spark-two" aria-hidden="true">✳</span>
+  </section>
+
+  <div class="section-heading"><div><span class="section-kicker">LET’S GET STARTED</span><h2>Your scheme finder</h2></div><div class="secure-note"><span>✓</span> No paperwork to begin</div></div>
+  <div class="layout">
+    <section class="main-panel" aria-label="Conversation">
+      <div class="panel-top"><div class="assistant-avatar" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 26V12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M16 18C9 18 7 14 7 8c6 0 9 3 9 10Z" fill="#c3dc9c"/><path d="M16 15c0-6 4-9 10-9 0 6-3 10-10 10" fill="#edca83"/></svg></div><div class="assistant-title"><strong>Your Kisan Mitra</strong><span>Here to help, one step at a time</span></div><div class="status"><span class="dot"></span><span id="status">Connecting…</span><span id="mode" class="mode"></span></div></div>
+      <div id="conversation" class="conversation" aria-live="polite"><div class="bubble bot">नमस्ते किसान मित्र। योजना जानने के लिए बताइए, आप कहाँ खेती करते हैं?</div></div>
+      <div id="checklist" class="checklist hidden"><h2>Documents checklist</h2><ul id="documents"></ul></div>
+      <div class="controls">
+        <button id="mic" class="mic" aria-label="Start speaking"><span class="mic-halo"></span><span class="mic-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><rect x="11" y="4" width="10" height="17" rx="5" fill="currentColor"/><path d="M7 15a9 9 0 0 0 18 0M16 24v4m-5 0h10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span><b>Tap to speak</b></button>
+        <p id="micHint">Speak naturally — you can interrupt me anytime.</p>
+        <div class="input-divider"><span>or type your reply</span></div>
+        <div class="text-row"><input id="text" type="text" autocomplete="off" placeholder="Type here in mock mode…" aria-label="Type your reply"><button id="send" aria-label="Send reply"><span>Send</span><span aria-hidden="true">↗</span></button></div>
+        <div class="quick"><button data-command="repeat"><span aria-hidden="true">↻</span> Repeat</button><button data-command="slower"><span aria-hidden="true">◖</span> Slower</button><button data-command="next scheme"><span aria-hidden="true">→</span> Next scheme</button></div>
+      </div>
+      <div class="panel-foot"><span class="privacy-icon">⌑</span> Your answers stay in this demo conversation.</div>
+    </section>
+
+    <aside class="side-panel">
+      <div class="side-heading"><div><span class="section-kicker">YOUR PROFILE</span><h2>Farm snapshot</h2></div><span class="snapshot-icon" aria-hidden="true">✳</span></div>
+      <p class="side-intro">As we chat, we’ll keep the details you share right here.</p>
+      <div class="slots"><dl id="slots"><div><dt><span class="slot-icon">⌖</span> Language</dt><dd>—</dd><dt><span class="slot-icon">⌖</span> State</dt><dd>—</dd><dt><span class="slot-icon">❋</span> Crop</dt><dd>—</dd><dt><span class="slot-icon">▱</span> Land (acres)</dt><dd>—</dd><dt><span class="slot-icon">⌂</span> Ownership</dt><dd>—</dd><dt><span class="slot-icon">◉</span> Bank account</dt><dd>—</dd><dt><span class="slot-icon">◉</span> Aadhaar-linked phone</dt><dd>—</dd></div></dl></div>
+      <div class="transcript-head"><h3>Conversation notes</h3><span class="live-label"><i></i> LIVE</span></div>
+      <ol id="log" class="log"><li class="empty-note">Your conversation will appear here.</li></ol>
+      <div class="disclaimer"><span aria-hidden="true">✦</span><p><strong>A helpful guide, not a final decision.</strong><br>Final eligibility is decided by the government office.</p></div>
+    </aside>
+  </div>
+  <footer><span>Made for the hands that feed us</span><span class="footer-seed">✦</span><span>Check current rules at your Krishi Kendra or CSC.</span></footer>
+</main>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>
